@@ -131,7 +131,7 @@ def generate_text(openAI_key,prompt, engine="text-davinci-003"):
     message = completions.choices[0].text
     return message
     
-def generate_text2(openAI_key, prompt, engine="gpt-3.5-turbo-0301"):
+def generate_text2(openAI_key, prompt, engine="gpt-3.5-turbo"):
     openai.api_key = openAI_key
     messages = [{'role': 'system', 'content': 'You are a helpful assistant.'},
                 {'role': 'user', 'content': prompt}]
